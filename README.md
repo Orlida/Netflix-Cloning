@@ -4,7 +4,7 @@ I am honored to access this repository. This is my first website clone using the
 Overall, this project is not complete yet; I will keep practicing, learning, and developing this Netflix clone further.
 Therefore, this repository serves as evidence that I have been learning and practicing website cloning.
 
-Thank you for your assessment.
+Thank you for your interest in my projects. I really appreciate your time in reviewing my work and assessing my technical skills
 
 Sincerely
 Norrapron Siriboonruksa

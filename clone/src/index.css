@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+.hero-mask{
+    mask-image: linear-gradient(to top, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.2) 10%, rgba(20, 20, 20, 1) 30%),
+    linear-gradient(to right, rgba(20, 20, 20, 0.4) 0%, rgba(20, 20, 20, 0.7) 25%, rgba(20, 20, 20, 0.9) 50%, rgba(20, 20, 20, 0.95) 75%, rgba(20, 20, 20, 1) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.2) 10%, rgba(20, 20, 20, 1) 30%),
+    linear-gradient(to right, rgba(20, 20, 20, 0.4) 0%, rgba(20, 20, 20, 0.7) 25%, rgba(20, 20, 20, 0.9) 50%, rgba(20, 20, 20, 0.95) 75%, rgba(20, 20, 20, 1) 100%);
+
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+}
+
+@layer components {
+    .nav-left{
+        @apply text-[14px] ml-[18px] font-medium text-[#e5e5e5] hover:text-[#b3b3b3] duration-300 cursor-default;
+    }
+
+    .nav-right{
+        @apply mr-[20px];
+    }
+
+    .noti-photo{
+        @apply m-4 w-[112px] h-[63px] object-cover; 
+    }
+
+    .noti-text{
+        @apply leading-5.25 font-medium;
+    }
+    
+    .noti-content{
+        @apply text-[#ccc] text-left py-5 pr-5;
+    }
+
+    .user-context{
+        @apply text-[13px] text-white hover:underline;
+    }
+
+    .help-user{
+        @apply text-[#ccc] mr-[13px] ml-[5px];
+    }
+
+    svg{
+        @apply text-white;
+    }
+
+    .list-carousel-active{
+        @apply w-[10px] h-[1px] bg-[#ccc] mr-[1px];
+    }
+
+    .list-carousel-inactive{
+        @apply w-[10px] h-[1px] bg-[#5d5d5d] mr-[1px];
+    }
+
+    .top-10svg{
+        @apply w-[7.5vw] h-full object-cover;
+    }
+
+}
+
+@theme {
+    --animate-fadeIn: fadeIn 0.3s ease-in;
+    --animate-fadeOut: fadeOut 0.3s ease-out;
+
+    @keyframes fadeIn{
+        0%,50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        0%,50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes slide-to-right {
+        from{}
+    }
+
+    /* font-weight-customizing */
+
+    /* --font-weight-semimedium: 450; */
+}
+
